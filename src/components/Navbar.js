@@ -1,36 +1,54 @@
-import React from 'react';
-import Scroll from 'react-scroll';
+import React, { useState } from 'react';
 import { Link } from 'react-scroll';
 
-const ScrollLink = Scroll.ScrollLink;
-
 const Navbar = () => {
+    const [active, setActive] = useState(false);
+
+    const navLinks = [
+        {
+            name: "Home",
+            destination: "top"
+        },
+        {
+            name: "History",
+            destination: "history"
+        },
+        {
+            name: "Instrumentation",
+            destination: "instrumentation"
+        },
+        {
+            name: "Tuning",
+            destination: "tuning"
+        },
+        {
+            name: "Range",
+            destination: "range"
+        },
+        {
+            name: "Techniques",
+            destination: "technique"
+        }
+    ]
+
+    const showLinks = () => {
+        return navLinks.map((item, i) => {
+            return(
+                <li key={i}>
+                    <Link to={item.destination} spy={true} smooth={true}>
+                        {item.name}
+                    </Link>
+                </li>
+            )
+        })
+    }
+
     return(
         <div className="side-nav">
             <nav className="links">
-                <Link to="top" spy={true} smooth={true}>
-                Home
-                </Link>
-                <Link to="history" spy={true} smooth={true}>
-                Brief History
-                </Link>
-                <Link to="instrumentation" spy={true} smooth={true}>
-                    Instrumentation
-                </Link>
-                {/* <a href="#">Home</a>
-                <a href="#">Brief History</a>          
-                    <ScrollLink
-                        to="instrumentation"
-                        spy={true}
-                        smooth={true}
-                        duration={100}
-                    >
-                        Instrumentation
-                    </ScrollLink>
-                
-                <a href="#">Tuning</a>
-                <a href="#">Range</a>
-                <a href="#">Technique</a> */}
+                <ul>
+                    {showLinks()}
+                </ul>
             </nav>
         </div>
     )
