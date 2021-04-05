@@ -61,6 +61,28 @@
   cursor: pointer;
 }
 
+.active {
+  color: red;
+}
+
+.main-section {
+  margin: auto;
+  margin-left: 200px;
+}
+
+.img {
+  height: 500px;
+  width: 250px;
+}
+
+img:hover {
+  opacity: 0.7;
+}
+
+.number-list {
+  list-style-position: inside;
+}
+
 /* .links a{
   list-style-type: none;
   display: block;

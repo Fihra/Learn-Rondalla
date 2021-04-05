@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-scroll';
 
 const Navbar = () => {
-    const [active, setActive] = useState(false);
+    const [active, setActive] = useState("");
 
     const navLinks = [
         {
@@ -31,11 +31,17 @@ const Navbar = () => {
         }
     ]
 
+    console.log(active);
+
+    const currentNav = (item) => {
+        console.log(item);
+    }
+
     const showLinks = () => {
         return navLinks.map((item, i) => {
             return(
                 <li key={i}>
-                    <Link to={item.destination} spy={true} smooth={true}>
+                    <Link activeClass="active" to={item.destination} spy={true} smooth={true} >
                         {item.name}
                     </Link>
                 </li>
