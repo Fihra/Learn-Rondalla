@@ -14,7 +14,7 @@ const Tuning = () => {
             </figure>
             </section>
             <figure>
-                <img src={TuningPic} alt="Tuning Sheet Music"/>
+                <img src={TuningPic} alt="Tuning Sheet Music" style={{width: 1100, height: 300}}/>
             </figure>
         </div>
     )

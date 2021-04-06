@@ -19,9 +19,18 @@ import Octavina1 from './assets/Octavina1_edited.png';
     <div className="App">
         <h1 id="top">Filipino Rondalla</h1>
         <main className="main-section">
-          <img className="img" src={Bandurria1} alt="Bandurria"></img>
-          <img className="img" src={Laud1} alt="Laud"></img>
-          <img className="img" src={Octavina1} alt="Octavina"></img>
+          <div className="img-container">
+            <img className="img" src={Bandurria1} alt="Bandurria"></img>
+            <span className="pop-up-text">Bandurria</span>
+          </div>
+          <div className="img-container">
+            <img className="img" src={Laud1} alt="Laud"></img>
+            <span className="pop-up-text">Laud</span>
+          </div>     
+          <div className="img-container">
+            <img className="img" src={Octavina1} alt="Octavina"></img>    
+            <span className="pop-up-text">Octavina</span>
+          </div>
             <h2>What is Filipino Rondalla?</h2>
             <p>It is a traditional Filipino music plucked-string ensemble.</p> 
           <History/>

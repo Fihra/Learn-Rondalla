@@ -6,7 +6,8 @@ const Range = () => {
         <div id="range">
             <h2>Range</h2>
             <figure>
-            <img src={RangePic} alt="Range Pic"/>
+            <figcaption><b>Bandurria</b> sounds an octave higher than the <b>Laud</b> &amp; <b>Octavina</b>. <b>Laud</b> &amp; <b>Octavina</b> are in the same octave, but <b>Octavina's</b> tone sounds a little deeper.</figcaption>
+            <img src={RangePic} alt="Range Pic" style={{width: 900, height: 500}}/>
             </figure>
         </div>
     )

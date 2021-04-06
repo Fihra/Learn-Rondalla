@@ -63,6 +63,7 @@ const Navbar = () => {
 
     return(
         <div className="side-nav">
+            <div className="side-line"></div>
             <nav className="links">
                 <ul>
                     {showLinks()}
