@@ -28,6 +28,18 @@ const Navbar = () => {
         {
             name: "Techniques",
             destination: "technique"
+        },
+        {
+            name: "Samples",
+            destination: "sample"
+        },
+        {
+            name: "Contact",
+            destination: "contact"
+        },
+        {
+            name: "Resources",
+            destination: "resources"
         }
     ]
 

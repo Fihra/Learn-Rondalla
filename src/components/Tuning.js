@@ -1,12 +1,21 @@
 import React from 'react';
+import TuningPic from '../assets/Tuning.png';
+import StringGroups from '../assets/String_Groups.png';
 
 const Tuning = () => {
     return(
         <div id="tuning">
             <h2>Tuning</h2>
-            <p>    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <p>    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <p>    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <section>
+                <p>There are 14 strings on each Rondalla instrument.</p>
+            <figure>
+                <img src={StringGroups} alt="String Groups on Laud" width={500}/>
+                <figcaption>String groups with Laud (Applied to all 3 instruments, Bandurria, Laud, Octavina)</figcaption>
+            </figure>
+            </section>
+            <figure>
+                <img src={TuningPic} alt="Tuning Sheet Music"/>
+            </figure>
         </div>
     )
 }

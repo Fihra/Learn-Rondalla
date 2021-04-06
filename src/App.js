@@ -1,10 +1,14 @@
 import './App.css';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 import Instrumentation from './components/Instrumentation';
 import History from './components/History';
 import Tuning from './components/Tuning';
 import Range from './components/Range';
 import Techniques from './components/Techniques';
+import Sample from './components/Sample';
+import Contact from './components/Contact';
+import Resources from './components/Resources';
 
 import Bandurria1 from './assets/Bandurria1_edited.png';
 import Laud1 from './assets/Laud2_edited.png';
@@ -25,9 +29,12 @@ import Octavina1 from './assets/Octavina1_edited.png';
           <Tuning/>
           <Range/>
           <Techniques/>
+          <Sample/>
+          <Contact/>
+          <Resources/>
         </main>
         <Navbar/>
-
+        <Footer/>
     </div>
   );
 }
