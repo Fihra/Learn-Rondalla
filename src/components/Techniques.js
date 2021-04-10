@@ -53,11 +53,11 @@ const audioTechniques = {
                 audioSrc: BandurriaTremolo
             },
             {
-                filename: "Bandurria Tremolo2",
+                fileName: "Bandurria Tremolo 2",
                 audioSrc: BandurriaTremolo2
             },
             {
-                fileName: "Bandurria Tremolo with click",
+                fileName: "Bandurria Tremolo 2 w/120BPM click",
                 audioSrc: BandurriaTremolo2click
             }   
         ],
@@ -67,11 +67,11 @@ const audioTechniques = {
                 audioSrc: LaudTremolo
             },
             {
-                filename: "Laud Tremolo2",
+                fileName: "Laud Tremolo 2",
                 audioSrc: LaudTremolo2
             },
             {
-                fileName: "Laud Tremolo with click",
+                fileName: "Laud Tremolo 2 w/120BPM click",
                 audioSrc: LaudTremolo2click
             }   
         ],
@@ -81,11 +81,11 @@ const audioTechniques = {
                 audioSrc: OctavinaTremolo
             },
             {
-                filename: "Octavina Tremolo2",
+                fileName: "Octavina Tremolo 2",
                 audioSrc: OctavinaTremolo2
             },
             {
-                fileName: "Octavina Tremolo with click",
+                fileName: "Octavina Tremolo 2 w/120BPM click",
                 audioSrc: OctavinaTremolo2click
             }   
         ]
@@ -105,6 +105,25 @@ const showAudio = (files) => {
     })
     return audioChords;
 }
+const showTremolo = (files) => {
+    const audioTremolos = Object.keys(files).map((key, value) => {
+        return (
+            <div key={value}>
+                {files[key].map((item, i ) => {
+                    return (
+                        <div key={i}>
+                        <b className="audio_name">{item.fileName}</b>
+                        <audio controls>
+                            <source src={item.audioSrc} type="audio/mp3"/>
+                        </audio>
+                        </div>
+                    )
+                })}
+            </div>
+        )
+    })
+    return audioTremolos;
+}
 
 const Techniques = () => {
     return(
@@ -122,10 +141,10 @@ const Techniques = () => {
                 <figcaption className="cap">Pluck Stroke</figcaption>
                 <img src={PluckStrokePic} alt="Pluck Stroke sheet music"/>
                 <figcaption>Writing Up/Down strokes are <b>optional</b>, unless you are looking for a certain timbre the player can adjust to their preference.</figcaption>
-
                 <figcaption className="cap">Tremolo</figcaption>
                 <figcaption><b>Tremolo is the main feature &amp; aesthetic for the Rondalla instruments.</b></figcaption>
                 <img src={TremoloPic} alt="Tremolo sheet music"/>
+                {showTremolo(audioTechniques["Tremolos"])}
             </figure>
         </div>
     )

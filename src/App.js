@@ -32,13 +32,13 @@ import Octavina1 from './assets/images/Octavina1_edited.png';
             <span className="pop-up-text">Octavina</span>
           </div>
             <h2>What is Filipino Rondalla?</h2>
-            <p>It is a traditional Filipino music plucked-string ensemble.</p> 
+            <p>A traditional Filipino music plucked string ensemble.</p> 
           <History/>
           <Instrumentation/>
           <Tuning/>
           <Range/>
           <Techniques/>
-          <Sample/>
+          {/* <Sample/> */}
           <Contact/>
           <Resources/>
         </main>

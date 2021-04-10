@@ -37,8 +37,8 @@ const audioTunings = [
 ]
 
 const showTuningAudio = () => {
-    return audioTunings.map((file) => {
-        return ( <div>
+    return audioTunings.map((file, i) => {
+        return ( <div key={i}>
             <b className="audio_name">{file.fileName}</b>
             <audio controls>
                 <source src={file.audioSrc} type="audio/mp3"/>

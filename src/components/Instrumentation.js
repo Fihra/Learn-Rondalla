@@ -27,7 +27,7 @@ const diagrams = [
 ]
 
 const checkIndex = (num) => {
-    console.log(num)
+    
 }
 
 const Instrumentation = () => {
