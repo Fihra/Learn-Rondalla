@@ -97,6 +97,7 @@ body {
 
 .social-media-list {
   list-style-type: none;
+  padding-left: 0;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2px;

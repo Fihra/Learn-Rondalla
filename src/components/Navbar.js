@@ -113,7 +113,7 @@ const Navbar = () => {
             </nav>
             <div className="follow-me">
                 <p>Built by Fabian Fabro.</p>
-                <p>Follow on:</p> 
+                <p><b>Follow me on:</b></p> 
                 <ul className="social-media-list">
                     {showSocialMedia()}
                 </ul>
