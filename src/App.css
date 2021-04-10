@@ -109,7 +109,7 @@ body {
   display: none;
   position: absolute;
   top: 400px;
-  left: 300px;
+  left: 250px;
   border-top: double black 3px;
   border-bottom: double black 3px;
   animation: fadeIn ease 2s;
@@ -140,4 +140,8 @@ img:hover {
 
 .cap {
   font-size: 1.5em;
+}
+
+.audio_name {
+  padding-right: 15px;
 }

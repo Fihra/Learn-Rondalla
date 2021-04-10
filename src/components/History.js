@@ -4,7 +4,7 @@ const History = () => {
     return(
         <div>
             <fieldset>
-            <legend><h2 id="history">History</h2></legend>
+            <legend align="center"><h2 id="history">History</h2></legend>
             <p>Rondalla originated in Spain, where later in the 16th century, the Spanish colonized Philippines, bringing Rondalla for the music culture. </p>
            
             <p> In 1565, Ferdinand Magellan arrived on the Philippine Islands. His main goal was to spread Christianity around the country. He also wanted to introduce the Spanish language and western European culture. 

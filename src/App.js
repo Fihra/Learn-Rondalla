@@ -10,9 +10,9 @@ import Sample from './components/Sample';
 import Contact from './components/Contact';
 import Resources from './components/Resources';
 
-import Bandurria1 from './assets/Bandurria1_edited.png';
-import Laud1 from './assets/Laud2_edited.png';
-import Octavina1 from './assets/Octavina1_edited.png';
+import Bandurria1 from './assets/images/Bandurria1_edited.png';
+import Laud1 from './assets/images/Laud2_edited.png';
+import Octavina1 from './assets/images/Octavina1_edited.png';
 
  const App = () => {
   return (

@@ -2,15 +2,15 @@ import React from 'react';
 import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
 
-import Bandurria2 from '../assets/Bandurria2.jpg';
-import Laud6 from '../assets/Laud6.jpg';
-import Octavina2 from '../assets/Octavina2.jpg';
-import Gitara from '../assets/Gitara_edited.png';
-import Bass from '../assets/bajo_de_unas_edited.png';
+import Bandurria2 from '../assets/images/Bandurria2.jpg';
+import Laud6 from '../assets/images/Laud6.jpg';
+import Octavina2 from '../assets/images/Octavina2.jpg';
+import Gitara from '../assets/images/Gitara_edited.png';
+import Bass from '../assets/images/bajo_de_unas_edited.png';
 
-import Parts1 from '../assets/Bandurria_diagram1.png';
-import Parts2 from '../assets/Bandurria_diagram2.png';
-import Parts3 from '../assets/Bandurria_diagram3.png';
+import Parts1 from '../assets/images/Bandurria_diagram1.png';
+import Parts2 from '../assets/images/Bandurria_diagram2.png';
+import Parts3 from '../assets/images/Bandurria_diagram3.png';
 
 const pictures = [
     <img className="img" src={Bandurria2} alt="bandurria"/>,

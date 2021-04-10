@@ -1,5 +1,5 @@
 import React from 'react';
-import RangePic from '../assets/Range.png';
+import RangePic from '../assets/images/Range.png';
 
 const Range = () => {
     return(
