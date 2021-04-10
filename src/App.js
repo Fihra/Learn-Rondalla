@@ -17,8 +17,9 @@ import Octavina1 from './assets/images/Octavina1_edited.png';
  const App = () => {
   return (
     <div className="App">
-        <h1 id="top">Filipino Rondalla</h1>
+        
         <main className="main-section">
+        <h1 id="top">Filipino Rondalla</h1>
           <div className="img-container">
             <img className="img" src={Bandurria1} alt="Bandurria"></img>
             <span className="pop-up-text">Bandurria</span>
