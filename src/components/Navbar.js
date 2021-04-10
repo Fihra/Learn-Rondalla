@@ -7,6 +7,8 @@ import instagramLogo from '../assets/images/instagram.png';
 import bandcampLogo from '../assets/images/bandcamp.png';
 import spotifyLogo from '../assets/images/spotify.png';
 import emailLogo from '../assets/images/email-icon.png';
+import fileLogo from '../assets/images/file-icon.png';
+import RondallaCheatSheet from '../assets/misc/Rondalla_Cheatsheet.pdf';
 
 const Navbar = () => {
     const myContacts = [
@@ -111,6 +113,8 @@ const Navbar = () => {
                     {showLinks()}
                 </ul>
             </nav>
+            <p style={{paddingTop: 10}}><b>Rondalla Cheatsheet PDF</b></p>
+            <a href={RondallaCheatSheet} target="_blank" rel="noreferrer"><img className="social-media-icons" src={fileLogo} alt="Rondalla Cheatsheet"/></a>
             <div className="follow-me">
                 <p>Built by Fabian Fabro.</p>
                 <p><b>Follow me on:</b></p> 

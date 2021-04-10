@@ -20,16 +20,16 @@ const imagesUsed = [
 ]
 
 const showBibliography = () => {
-    return bibliography.map((bib) => {
+    return bibliography.map((bib, i) => {
         return(
-            <li>"{bib.title}" by {bib.author} {bib.source !== null ? <a href={bib.source}>${bib.source}</a> : null}</li>
+            <li key={i}>"{bib.title}" by {bib.author} {bib.source !== null ? <a href={bib.source}>${bib.source}</a> : null}</li>
         )
     })
 }
 
 const showImages = () => {
-    return imagesUsed.map(i => {
-        return <li><a href={i}>{i}</a></li>
+    return imagesUsed.map((i) => {
+        return <li key={i}><a href={i}>{i}</a></li>
     })
 }
 
