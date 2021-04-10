@@ -42,9 +42,6 @@ const Instrumentation = () => {
                 <li>Bajo de uñas (Double Bass)</li>
             </ol>
             <AliceCarousel items={pictures} disableButtonsControls animationType="fadeout" onInitialized={() => checkIndex(0)} />
-            
-
-            <p>With the many different interpretations that can be altered in order to showcase the rondalla instruments, we can see about </p>
 
             <AliceCarousel items={diagrams} disableButtonsControls disableDotsControls animationType="slide" autoWidth={400}/>
         </div>
